@@ -1,6 +1,6 @@
 <template>
   <div class="icon-wrapper">
-    <svg class="icon" :width="width" :hieght="hieght">
+    <svg class="icon" :width="width" :height="height">
       <use v-bind="{ 'xlink:href': '/feather-sprite.svg#' + name }" />
     </svg>
     <slot></slot>
@@ -15,7 +15,7 @@ export default {
       type: [Number, String],
       default: 24
     },
-    hieght: {
+    height: {
       type: [Number, String],
       default: 24
     }
